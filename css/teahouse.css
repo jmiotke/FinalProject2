@@ -1,0 +1,280 @@
+/* This is the style sheet for Joe Miotke's final project, Alice's Tea House */
+
+* { box-sizing: border-box; }
+
+/* HTML5 default tag */
+
+header, main, nav, footer, figure, figcaption, aside, section, article {display: block; }
+
+#mobile {display: none; }
+
+#desktop {display: inline; }
+
+main { background-color: #FFFFFF;
+        margin-left: 260px;
+        padding-top: 5px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 90px;
+        display: block; }
+
+body {background-color: #98FB98;  /* removed #B8DBED   */
+        font-family: Arial, Helvetica, sans-serif; }
+
+header {background-color: #006400;
+        color: #FFFFFF;
+        height: 120px;
+        text-align: center;
+        padding-top: 30px;
+        padding-left: 3em;
+        background-image: url("../img/chinese_char_2.jpg");
+        background-size: auto;
+        background-position: right;
+        background-repeat: no-repeat;}
+
+nav { float: left;
+        width: 260px; /* changed from 160 px  */
+        font-size: 120%;
+        font-weight: bold;
+
+        padding: 1.5em; }
+
+nav a {text-decoration: none;
+        transition: color 2s ease-in-out; }
+
+nav ul { list-style-type: none; margin: 0; padding: 0; font-size: 1.2em; }
+
+nav a:link { color: #5C7FA3; }
+nav a:visited { color: #344873; }
+nav a:hover { color: #A52A2A; }
+
+h2 {color: #3CB371;
+        font-family: Georgia, "Times New Roman", Serif;
+        text-shadow: 1px 1px 1px #cccccc; }
+
+h3 {color: #3CB371;
+        font-family: Georgia, "Times New Roman", Serif;
+        text-shadow: 1px 1px 1px #cccccc; }
+
+dt {color: #000033; }
+
+.teahouse {color: #3CB371;
+        font-weight: bold; }
+
+h1 {margin-bottom: 0;
+        margin-bottom: 0;
+        font-size: 3em;
+        letter-spacing: 0.25em; }
+
+main ul {list-style-image: url("../img/marker.gif"); }
+
+footer {font-size: 75%;
+        font-style: italic;
+        text-align: center;
+        font-family: Georgia, "Times New Roman", Serif;
+        padding: 20px;
+        margin-left: 0;
+        background-color: #FFFFFF; }
+
+#wrapper {width: 80%; margin-left: auto; margin-right: auto;
+        background-color: #90C7E3;
+        min-width: 960px;
+        max-width: 2048px;
+        box-shadow: 1px 1px 1px #000033;
+        background-image: linear-gradient(to bottom, #FFFFFF, #90EE90); }
+
+#homehero {height: 300px;
+    margin-left: 260px;
+    background-image: url("../img/beijinghorizon.jpg");
+    background-size: auto auto;
+    background-repeat: no-repeat;
+    background-color: #98FB98;
+    /* centering photo */
+    background-position: 50% 0}
+
+#teahero {height: 300px;
+        margin-left: 260px;
+        background-image: url("../img/teahero.jpg");
+        background-size: auto auto;
+        background-repeat: repeat; }
+
+#blackteahero {height: 300px;
+        margin-left: 260px;
+        background-image: url("../img/black_tea.jpg");
+        background-size: auto auto;
+        background-repeat: repeat; }
+
+#whiteteahero {height: 300px;
+        margin-left: 260px;
+        background-image: url("../img/whiteteahero.jpg");
+        background-size: auto auto;
+        background-repeat: repeat; }
+
+#greenteahero {height: 300px;
+        margin-left: 260px;
+        background-image: url("../img/greentea.jpg");
+        background-size: auto auto;
+        background-repeat: repeat; }
+
+#oolongteahero {height: 300px;
+        margin-left: 260px;
+        background-image: url("../img/oolongtea.jpg");
+        background-size: auto auto;
+        background-repeat: repeat; }
+
+#puehrteahero {height: 300px;
+        margin-left: 260px;
+        background-image: url("../img/puehrtea.jpg");
+        background-size: auto auto;
+        background-repeat: repeat; }
+
+#alicehero {height: 300px;
+        margin-left: 260px;
+        background-image: url("../img/alicehero.jpg");
+        background-size: auto auto;
+        background-repeat: no-repeat;
+        background-color: #98FB98;
+        /* centering Alice's photo */
+        background-position: 50% 0}
+
+
+#teapothero {height: 300px;
+        margin-left: 260px;
+        background-image: url("../img/teapothero1.jpg");
+        background-size: auto auto;
+        background-repeat: repeat; }
+
+
+
+/* Setting CSS for tablet */
+
+@media only screen and (max-width: 64em) {
+        body {margin: 0;
+                background-color: #FFFFFF; }
+
+        #wrapper {min-width: 0;
+                width: auto;
+                box-shadow: none;
+                border: none; }
+
+        header {padding-top: 0.5em;
+                padding-bottom: 0.5em;
+                padding-left: 0;
+                height: auto; }
+
+        h1 {letter-spacing: 0.1em; }
+
+        main {margin-left: 0; }
+
+        nav {float: none;
+                width: auto;
+                text-align: center;
+                padding: 0.5em; }
+
+        nav li {
+                display: inline;
+                padding-top: 0.25em;
+                padding-bottom: 0.25em;
+                padding-left: 0.75em;
+                padding-right: 0.75em;
+        }
+
+        #homehero, #teahero, #teapothero, #greenteahero, #blackteahero, #whiteteahero, #puehrteahero,
+        #alicehero, #oolongteahero {margin-left: 0; }
+
+        #videoformatting {display: inline-block; }
+
+
+
+}
+
+/* Setting CSS for mobile */
+
+@media only screen and (max-width: 37.5em) {
+
+        main {
+                padding-bottom: 0.1em;
+                padding-top: 0.1em;
+                padding-left: 1em;
+                padding-right: 1em;
+                font-size: 90%;
+        }
+
+        h1 {
+                font-size: 2em;
+        }
+
+        nav {
+                padding: 0;
+        }
+
+        nav li {
+                display: block;
+                margin: 0;
+                border-bottom: 2px solid #330000;
+        }
+
+        nav a {
+                display: block;
+        }
+
+        #homehero, #teahero, #teapothero, #greenteahero, #blackteahero, #whiteteahero, #puehrteahero,
+        #alicehero, #oolongteahero {
+                background-image: none;
+                height: 0;
+        }
+
+        #mobile {
+                display: inline;
+        }
+
+        #desktop {
+                display: none;
+        }
+
+        label { float: none;
+                text-align: left; }
+
+        input[type="submit"] {margin-left:0;}
+
+        #gallery {
+                display: none;
+        }
+
+
+
+}
+
+
+td, th {padding: 0.5em; border: 2px solid #3399CC; }
+
+td {text-align: center; }
+
+.text {text-align: left; }
+
+
+label {float: left;
+        display: block;
+        text-align: right;
+        width: 120px;
+        padding-right: 5px; }
+
+input, textarea {display: block;
+                margin-bottom: 20px; }
+
+input[type="submit"] {margin-left: 130px;}
+
+
+
+figure {
+        position: absolute;
+        left: 280px;
+        text-align: center;
+        opacity: 0.25;
+}
+
+/* CHECKED WITH CSS VALIDATOR */
+
+
+
+
